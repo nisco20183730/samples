@@ -1,0 +1,516 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="AAA">
+  <meta name="generator" content="AAA">
+  <title>サンプルシステム（詳細情報）</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-zbeoRHYBpmHiRFnOJBHwqyoMVzpRbaKwAP22UNoot+c=" crossorigin="anonymous">
+  <!-- Custom styles-->
+  <style>
+    .list-group-item {
+      font-size: 0.8rem;
+    }
+    .badge {
+      font-size: 1.0rem;
+    }
+    .table {
+      font-size: 0.8rem;
+      table-layout: fixed;
+    }
+    .table th {
+      width: 100px;
+    }
+    .h-list {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      /* 配置調整 */
+      padding-left: 0px;
+    }
+    .h-list::-webkit-scrollbar { display: none; } 
+    /* 横スクロール用 */
+    .h-item {
+      display: inline-block;
+      white-space:normal;
+      width: 100%;
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="../sample.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">ホーム <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./search.html">材番入力画面へ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">設定</a>
+          </li>
+        </ul>
+      </div>
+      <!--<a class="navbar-brand" href="../index.html">サンプルシステム（詳細情報）</a>-->
+    </nav>
+  </header>
+  <br>
+  <main role="main">
+    <div class="container-fluid">
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="plan-tab" data-toggle="tab" href="#plan" role="tab" aria-controls="plan" aria-selected="true">計画</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="rslt-tab" data-toggle="tab" href="#rslt" role="tab" aria-controls="rslt" aria-selected="false">実績</a>
+        </li>
+      </ul>
+      <br>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- 計画 -->
+        <div class="tab-pane active" id="plan" role="tabpanel" aria-labelledby="plan-tab">
+          <div class="card">
+            <div class="card-body pt-1 pb-1">
+              <table class="table table-sm table-borderless mb-0">
+                <tr>
+                  <th scope="row">工番　　：</th>
+                  <td>FL99-9999</td>
+                </tr>
+                <tr>
+                  <th scope="row">符号　　：</th>
+                  <td>001-001</td>
+                </tr>
+                <tr>
+                  <th scope="row">材料番号：</th>
+                  <td>99D9999-01-001-002</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <nav id="plan-navbar-scroll" class="navbar navbar-light bg-light">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#plan-one">001</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#plan-two">002</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#plan-three">003</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="h-list" data-spy="scroll" data-target="#plan-navbar-scroll" data-offset="0">
+            <li class="h-item" id="plan-one">
+              <div class="card">
+                <div class="card-body pt-1 pb-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">工程　　：</th>
+                      <td colspan="3">010：鋳込み～焼鈍終了</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製造時間：</th>
+                      <td>999</td>
+                      <th>単位：</th>
+                      <td>時間</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">資源：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <br>
+              <div class="card">
+                <div class="card-header pt-1 pb-1">ユーザ指定</div>
+                <div class="card-body pt-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">計画開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製造時間：</th>
+                      <td>999</td>
+                      <th>単位：</th>
+                      <td>時間</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査場所：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <li class="h-item" id="plan-two">
+              <div class="card">
+                <div class="card-body pt-1 pb-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">工程　　：</th>
+                      <td colspan="3">230：ネックR部HF手入れ リング焼嵌 プラグ入り</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製造時間：</th>
+                      <td>999</td>
+                      <th>単位：</th>
+                      <td>時間</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">資源：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <br>
+              <div class="card">
+                <div class="card-header pt-1 pb-1">ユーザ指定</div>
+                <div class="card-body pt-1 pb-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">計画開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製造時間：</th>
+                      <td>999</td>
+                      <th>単位：</th>
+                      <td>時間</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査場所：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <li class="h-item" id="plan-three">
+              <div class="card">
+                <div class="card-body pt-1 pb-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">工程　　：</th>
+                      <td colspan="3">240：出荷</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製造時間：</th>
+                      <td>999</td>
+                      <th>単位：</th>
+                      <td>時間</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">資源：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <br>
+              <div class="card">
+                <div class="card-header pt-1 pb-1">ユーザ指定</div>
+                <div class="card-body pt-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">計画開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">計画終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製造時間：</th>
+                      <td>999</td>
+                      <th>単位：</th>
+                      <td>時間</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査場所：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.plan -->
+        
+        <!-- 実績 -->
+        <div class="tab-pane" id="rslt" role="tabpanel" aria-labelledby="rslt-tab">
+          <div class="card">
+            <div class="card-body pt-1 pb-1">
+              <table class="table table-sm table-borderless mb-0">
+                <tr>
+                  <th scope="row">工番　　：</th>
+                  <td>FL99-9999</td>
+                </tr>
+                <tr>
+                  <th scope="row">符号　　：</th>
+                  <td>001-001</td>
+                </tr>
+                <tr>
+                  <th scope="row">材料番号：</th>
+                  <td>99D9999-01-001-002</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <nav id="rslt-navbar-scroll" class="navbar navbar-light bg-light">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#rslt-one">001</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rslt-two">002</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rslt-three">003</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="h-list" data-spy="scroll" data-target="#rslt-navbar-scroll" data-offset="0">
+            <li class="h-item" id="rslt-one">
+              <div class="card">
+                <div class="card-body pt-1 pb-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">工程　　：</th>
+                      <td>010：鋳込み～焼鈍終了</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header pt-1 pb-1">実績情報</div>
+                <div class="card-body pt-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">実績開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">実績終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">ステータス：</th>
+                      <td>着手</td>
+                      <th>進捗：</th>
+                      <td>99％</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">資源：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査結果：</th>
+                      <td colspan="3">（OK）</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製品部コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">対応：</th>
+                      <td colspan="3">（△△△△△）</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <li class="h-item" id="rslt-two">
+              <div class="card">
+                <div class="card-body pt-1 pb-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">工程　　：</th>
+                      <td>230：ネックR部HF手入れ リング焼嵌 プラグ入り</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header pt-1 pb-1">実績情報</div>
+                <div class="card-body pt-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">実績開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">実績終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">ステータス：</th>
+                      <td>着手</td>
+                      <th>進捗：</th>
+                      <td>99％</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">資源：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査結果：</th>
+                      <td colspan="3">（OK）</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製品部コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">対応：</th>
+                      <td colspan="3">（△△△△△）</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <li class="h-item" id="rslt-three">
+              <div class="card">
+                <div class="card-body pt-1 pb-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">工程　　：</th>
+                      <td rowspan="2">240：出荷</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header pt-1 pb-1">実績情報</div>
+                <div class="card-body pt-1">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tr>
+                      <th scope="row">実績開始：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">実績終了：</th>
+                      <td colspan="3">2018/12/20 15：00：00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">ステータス：</th>
+                      <td>着手</td>
+                      <th>進捗：</th>
+                      <td>99％</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">資源：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">検査結果：</th>
+                      <td colspan="3">（OK）</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">製品部コメント：</th>
+                      <td colspan="3">〇〇〇〇〇〇〇〇〇〇〇</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">対応：</th>
+                      <td colspan="3">（△△△△△）</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.rslt -->
+      </div><!-- tab-content -->
+    </div><!-- container-fluid -->
+  </main>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../../dist/js/bootstrap.bundle.min.js" integrity="sha256-xMd8DLHTisQcL8fOZeYCE9MLxtzoxDkae1uCn6H22iw=" crossorigin="anonymous"></script>
+</body>
+</html>
